@@ -9,9 +9,15 @@ import java.util.Optional;
 
 public class GateRepository {
     Map<Integer,Gate> gates=new HashMap<>();
+
+
     public Optional<Gate> findGateById(int gateId){
         if(gates.containsKey(gateId)) return Optional.of(gates.get(gateId));
-        else return Optional.empty();
+        else {
+            return Optional.empty();
+//            gates.put(gateId,new Gate());
+//            return Optional.of(gates.get(gateId));
+        }
     }
 }
 

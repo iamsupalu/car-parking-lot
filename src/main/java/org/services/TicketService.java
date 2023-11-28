@@ -77,7 +77,7 @@ public class TicketService {
         }
         else throw new SpotNotFoundException();
 
-        ticket.setTicketNumber("T"+vehicleNumber+ticket.getEntryTime());
+        ticket.setTicketNumber("T-"+vehicleNumber+ticket.getEntryTime());
         return ticketRepository.saveTicket(ticket);
     }
 }

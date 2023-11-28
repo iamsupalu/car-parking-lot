@@ -9,6 +9,6 @@ public class NearestSpotAllocationStrategy implements SpotAllocationStrategy{
 
     @Override
     public ParkingSpot getSpot(Gate gate, VehicleType vehicleType) {
-        return null;
+        return new ParkingSpot();
     }
 }

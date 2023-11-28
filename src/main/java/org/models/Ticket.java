@@ -57,4 +57,14 @@ public class Ticket extends BaseModel{
     public void setParkingSpot(ParkingSpot parkingSpot) {
         this.parkingSpot = parkingSpot;
     }
+
+    @Override
+    public String toString() {
+        return "Ticket Number : " + this.ticketNumber+" , "
+                + "Entry Time : "+this.entryTime+ " , "
+//                + "Operator Name : " + this.getOperator().getName()+ " , "
+                + "Vehicle Number : " + this.getVehicle().getVehicleNumber()+ " , "
+                + "Gate Number : " + this.getGate().getGateNumber();
+
+    }
 }
